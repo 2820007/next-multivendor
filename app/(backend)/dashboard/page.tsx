@@ -5,6 +5,11 @@ const page = () => {
   return (
     <div>
       <Heading title="Dashboard Overview"/>
+
+      {/* Large cards */}
+      {/* Small cards */}
+      {/* Charts */}
+      {/* Recent Orders Table */}
     </div>
   )
 }

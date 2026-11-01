@@ -167,9 +167,10 @@ const Sidebar = () => {
                             isActive
                               ? "bg-emerald-50 font-medium text-emerald-700"
                               : "text-slate-500 hover:bg-slate-50 hover:text-slate-900"
+
                           }`}
                         >
-                          <ChildIcon size={17} strokeWidth={1.8} />
+                          <ChildIcon  size={17} strokeWidth={1.8} />
                           <span>{child.name}</span>
                         </Link>
                       );
