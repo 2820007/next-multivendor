@@ -22,3 +22,18 @@
 body {
  min-height: 100vh;
 }
+
+/* Dashboard-wide palette overrides, scoped so the storefront is unaffected. */
+:root[data-dashboard-theme="dark"] .bg-white { background-color: #1e293b; }
+:root[data-dashboard-theme="dark"] .bg-slate-50 { background-color: #0f172a; }
+:root[data-dashboard-theme="dark"] .bg-slate-100 { background-color: #1e293b; }
+:root[data-dashboard-theme="dark"] .bg-emerald-50 { background-color: #064e3b; }
+:root[data-dashboard-theme="dark"] .text-slate-900,
+:root[data-dashboard-theme="dark"] .text-slate-800 { color: #f1f5f9; }
+:root[data-dashboard-theme="dark"] .text-slate-700,
+:root[data-dashboard-theme="dark"] .text-slate-600 { color: #cbd5e1; }
+:root[data-dashboard-theme="dark"] .text-slate-500 { color: #94a3b8; }
+:root[data-dashboard-theme="dark"] .text-emerald-700 { color: #6ee7b7; }
+:root[data-dashboard-theme="dark"] .border-slate-100,
+:root[data-dashboard-theme="dark"] .border-slate-200 { border-color: #334155; }
+:root[data-dashboard-theme="dark"] .ring-white { --tw-ring-color: #1e293b; }
