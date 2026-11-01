@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -17,13 +16,17 @@ export default function Navbar() {
   function toggleTheme() {
     const nextIsDark = !isDark;
     setIsDark(nextIsDark);
-    document.documentElement.dataset.dashboardTheme = nextIsDark ? "dark" : "light";
-    window.localStorage.setItem("dashboard-theme", nextIsDark ? "dark" : "light");
+    document.documentElement.dataset.dashboardTheme = nextIsDark
+      ? "dark"
+      : "light";
+    window.localStorage.setItem(
+      "dashboard-theme",
+      nextIsDark ? "dark" : "light",
+    );
   }
 
   return (
-  <header className="fixed left-64 right-0 top-0 z-50 flex h-16 items-center justify-between border-b border-slate-200 bg-white px-6 shadow-sm">
-
+    <header className="fixed left-64 right-0 top-0 z-50 flex h-16 items-center justify-between border-b border-slate-200 bg-white px-6 shadow-sm">
       {/* Left Section */}
       <div className="flex items-center gap-4">
         <button
@@ -41,15 +44,18 @@ export default function Navbar() {
 
       {/* Right Section */}
       <div className="flex items-center gap-2">
-
         <button
           type="button"
           onClick={toggleTheme}
-          className="rounded-lg p-2 text-slate-500 transition curser-pointer hover:bg-emerald-50 hover:text-emerald-700"
+          className="rounded-lg p-2 text-slate-500 transition  hover:bg-emerald-50 hover:text-emerald-700"
           aria-label={`Switch to ${isDark ? "light" : "dark"} theme`}
           title={`Switch to ${isDark ? "light" : "dark"} theme`}
         >
-          {isDark ? <Moon size={20} /> : <Sun className="curser-pointer" size={20} />}
+          {isDark ? (
+            <Moon size={20} />
+          ) : (
+            <Sun className="curser-pointer" size={20} />
+          )}
         </button>
 
         <button
@@ -66,15 +72,10 @@ export default function Navbar() {
           </div>
 
           <div className="hidden sm:block">
-            <p className="text-sm font-semibold text-slate-800">
-              Admin
-            </p>
-            <p className="text-xs text-slate-500">
-              Administrator
-            </p>
+            <p className="text-sm font-semibold text-slate-800">Admin</p>
+            <p className="text-xs text-slate-500">Administrator</p>
           </div>
         </div>
-
       </div>
     </header>
   );

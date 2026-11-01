@@ -142,6 +142,8 @@ const Sidebar = () => {
                   <Icon size={19} strokeWidth={1.8} />
 
                   <span className="flex-1 text-left">{item.name}</span>
+               
+                  
 
                   <ChevronDown
                     size={16}
